@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <title>FAQS</title>
+    <style>
+.faq{
+    max-width:900px;
+    margin:80px auto;
+    padding:20px;
+}
+
+.faq-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.faq-title h2{
+    font-size:40px;
+    color:#222;
+    margin-bottom:10px;
+    position:relative;
+    display:inline-block;
+}
+
+.faq-title h2::after{
+    content:"";
+    width:70%;
+    height:4px;
+    background:#00b894;
+    position:absolute;
+    left:15%;
+    bottom:-10px;
+    border-radius:10px;
+}
+
+.faq-title p{
+    color:#666;
+    font-size:17px;
+    margin-top:20px;
+}
+
+.faq details{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:12px;
+    margin-bottom:18px;
+    overflow:hidden;
+    transition:.3s;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+.faq details:hover{
+    border-color:#00b894;
+    box-shadow:0 8px 20px rgba(0,184,148,.15);
+}
+
+.faq summary{
+    padding:18px 20px;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.faq summary::-webkit-details-marker{
+    display:none;
+}
+
+.faq summary::after{
+    content:"+";
+    font-size:28px;
+    color:#00b894;
+    font-weight:bold;
+}
+
+.faq details[open] summary::after{
+    content:"−";
+}
+
+.faq details p{
+    padding:0 20px 20px;
+    color:#555;
+    line-height:1.7;
+    font-size:16px;
+                               }
+      
+    </style>
+  </head>
+  <body>
+<section class="faq" id="faq">
+
+    <div class="faq-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to the most common questions about my services.</p>
+    </div>
+
+    <details>
+        <summary>What services do you offer?</summary>
+        <p>I provide Front-End Development, Python programming, and Data Entry services.</p>
+    </details>
+
+    <details>
+        <summary>Do you create responsive websites?</summary>
+        <p>Yes, all websites are fully responsive and mobile-friendly.</p>
+    </details>
+
+    <details>
+        <summary>Which technologies do you use?</summary>
+        <p>I work with HTML, CSS, JavaScript, and Python.</p>
+    </details>
+
+    <details>
+        <summary>Can you redesign an existing website?</summary>
+        <p>Yes, I can redesign and improve existing websites.</p>
+    </details>
+
+    <details>
+        <summary>Do you fix website bugs?</summary>
+        <p>Yes, I can fix HTML, CSS, JavaScript, and Python-related issues.</p>
+    </details>
+
+    <details>
+        <summary>Do you offer Data Entry services?</summary>
+        <p>Yes, I provide Excel, Word, copy-paste, typing, and web research services.</p>
+    </details>
+
+    <details>
+        <summary>Can you convert PDF files?</summary>
+        <p>Yes, I can convert PDF files into Word or Excel accurately.</p>
+    </details>
+
+    <details>
+        <summary>How long does a project take?</summary>
+        <p>Delivery time depends on the project requirements.</p>
+    </details>
+
+    <details>
+        <summary>Do you offer revisions?</summary>
+        <p>Yes, revisions are available to ensure client satisfaction.</p>
+    </details>
+
+    <details>
+        <summary>How can I contact you?</summary>
+        <p>You can contact me through the Contact section of this website.</p>
+    </details>
+
+</section>
+    
+  </body>
+</html>

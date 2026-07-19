@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+
+  <style>
+    body{
+      background-color:black;
+    }
+
+    .box{
+      max-width:600px;
+      margin:50px auto;
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    input, textarea{
+      width:100%;
+      margin:10px 0;
+      padding:10px;
+    }
+
+    button{
+      background:green;
+      color:white;
+      padding:10px;
+      border:none;
+      width:100%;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:darkgreen;
+    }
+  </style>
+
+  <!-- EmailJS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <script>
+    (function(){
+      emailjs.init("14YTXd6e61iOBk4gF"); // 👈 yahan apni key dalni hai
+    })();
+  </script>
+
+</head>
+
+<body>
+
+<div class="box">
+
+  <h2>Contact Me</h2>
+  <h3>tel:03344475033</h3>
+  <h3>Email:omamakousar@gmail.com</h3>
+  <h4>send message</h4>
+
+  <form id="contact-form">
+
+    <input type="text" name="from_name" placeholder="Your Name" required>
+
+    <input type="email" name="from_email" placeholder="Your Email" required>
+
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+  </form>
+
+</div>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_ubutsu9",
+    "template_4vzxcgf",
+    this
+  ).then(function(){
+    alert("Message sent successfully! 📧");
+  }, function(error){
+    alert("Failed to send message");
+  });
+
+});
+</script>
+
+</body>
+  </html>
